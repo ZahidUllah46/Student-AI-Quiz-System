@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student AI Quiz System</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- =========================
+             WELCOME SCREEN
+        ========================== -->
+        <section id="welcome-screen" class="card">
+
+            <div class="header">
+                <h1>Student AI Quiz System</h1>
+                <p>
+                    Artificial Intelligence Assessment Quiz
+                </p>
+            </div>
+
+            <form id="student-form">
+
+                <div class="input-group">
+                    <label for="studentName">
+                        Student Name
+                    </label>
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter your full name"
+                    />
+                </div>
+
+                <div class="input-group">
+                    <label for="rollNumber">
+                        Roll Number
+                    </label>
+                    <input
+                        type="text"
+                        id="rollNumber"
+                        placeholder="Enter your roll number"
+                    />
+                </div>
+
+                <button type="submit" class="btn">
+                    Start Quiz
+                </button>
+
+                <p id="form-error" class="error-message"></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             QUIZ SCREEN
+        ========================== -->
+        <section id="quiz-screen" class="card hidden">
+
+            <!-- Top Bar -->
+            <div class="top-bar">
+
+                <div class="student-info">
+                    <h3>Student Information</h3>
+
+                    <p>
+                        <strong>Name:</strong>
+                        <span id="displayName"></span>
+                    </p>
+
+                    <p>
+                        <strong>Roll No:</strong>
+                        <span id="displayRoll"></span>
+                    </p>
+                </div>
+
+                <div class="timer-box">
+                    <span>Time Left</span>
+                    <h2 id="timer">30</h2>
+                </div>
+
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-section">
+
+                <div class="progress-text">
+                    <span id="questionCounter">
+                        Question 1 of 10
+                    </span>
+
+                    <span id="progressPercent">
+                        10%
+                    </span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+
+            </div>
+
+            <!-- Question Area -->
+            <div class="question-card">
+
+                <h2 id="questionText">
+                    Question will appear here...
+                </h2>
+
+                <div id="optionsContainer" class="options-container">
+
+                    <!-- Options inserted by JS -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RESULT SCREEN
+        ========================== -->
+        <section id="result-screen" class="card hidden">
+
+            <div class="result-header">
+                <h1>Quiz Result</h1>
+                <p>AI Quiz Assessment Report</p>
+            </div>
+
+            <div class="result-card">
+
+                <div class="result-row">
+                    <span>Student Name</span>
+                    <span id="resultName"></span>
+                </div>
+
+                <div class="result-row">
+                    <span>Roll Number</span>
+                    <span id="resultRoll"></span>
+                </div>
+
+                <div class="result-row">
+                    <span>Total Questions</span>
+                    <span id="totalQuestions"></span>
+                </div>
+
+                <div class="result-row">
+                    <span>Correct Answers</span>
+                    <span id="correctAnswers"></span>
+                </div>
+
+                <div class="result-row">
+                    <span>Wrong Answers</span>
+                    <span id="wrongAnswers"></span>
+                </div>
+
+                <div class="result-row">
+                    <span>Skipped Questions</span>
+                    <span id="skippedAnswers"></span>
+                </div>
+
+                <div class="result-row">
+                    <span>Percentage</span>
+                    <span id="percentage"></span>
+                </div>
+
+                <div class="result-row">
+                    <span>Performance</span>
+                    <span id="performance"></span>
+                </div>
+
+            </div>
+
+            <div class="result-actions">
+
+                <button id="restartBtn" class="btn">
+                    Restart Quiz
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
