@@ -1,8 +1,6 @@
-// ===============================
-// STUDENT AI QUIZ SYSTEM
-// ===============================
 
-// Questions Array
+
+// Questions 
 
 const questions = [
     {
@@ -107,9 +105,7 @@ const questions = [
     }
 ];
 
-// ===============================
-// DOM ELEMENTS
-// ===============================
+
 
 const welcomeScreen = document.getElementById("welcome-screen");
 const quizScreen = document.getElementById("quiz-screen");
@@ -145,10 +141,6 @@ const performance = document.getElementById("performance");
 
 const restartBtn = document.getElementById("restartBtn");
 
-// ===============================
-// VARIABLES
-// ===============================
-
 let currentQuestion = 0;
 let score = 0;
 let wrong = 0;
@@ -159,9 +151,7 @@ let timeLeft = 30;
 let studentName = "";
 let rollNumber = "";
 
-// ===============================
-// START QUIZ
-// ===============================
+
 
 studentForm.addEventListener("submit", function (e) {
 
@@ -191,9 +181,6 @@ studentForm.addEventListener("submit", function (e) {
     loadQuestion();
 });
 
-// ===============================
-// SHUFFLE QUESTIONS
-// ===============================
 
 function shuffleQuestions() {
 
@@ -201,9 +188,6 @@ function shuffleQuestions() {
 
 }
 
-// ===============================
-// LOAD QUESTION
-// ===============================
 
 function loadQuestion() {
 
@@ -238,9 +222,6 @@ function loadQuestion() {
     updateProgress();
 }
 
-// ===============================
-// TIMER
-// ===============================
 
 function startTimer() {
 
@@ -266,9 +247,6 @@ function startTimer() {
     }, 1000);
 }
 
-// ===============================
-// ANSWER SELECTION
-// ===============================
 
 function selectAnswer(button, selectedOption) {
 
@@ -308,9 +286,6 @@ function selectAnswer(button, selectedOption) {
     }, 1500);
 }
 
-// ===============================
-// NEXT QUESTION
-// ===============================
 
 function nextQuestion() {
 
@@ -327,10 +302,6 @@ function nextQuestion() {
     }
 }
 
-// ===============================
-// PROGRESS BAR
-// ===============================
-
 function updateProgress() {
 
     questionCounter.textContent =
@@ -344,10 +315,6 @@ function updateProgress() {
     progressPercent.textContent =
         Math.round(percent) + "%";
 }
-
-// ===============================
-// SHOW RESULTS
-// ===============================
 
 function showResults() {
 
@@ -389,9 +356,6 @@ function showResults() {
     }
 }
 
-// ===============================
-// RESTART QUIZ
-// ===============================
 
 restartBtn.addEventListener("click", () => {
 
@@ -411,7 +375,3 @@ restartBtn.addEventListener("click", () => {
     shuffleQuestions();
 
 });
-
-// ===============================
-// END
-// ===============================
