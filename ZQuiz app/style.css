@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
+
 
 * {
     margin: 0;
@@ -24,9 +22,7 @@ body {
     max-width: 900px;
 }
 
-/* =========================
-   CARD
-========================= */
+
 
 .card {
     background: #ffffff;
@@ -40,9 +36,7 @@ body {
     display: none;
 }
 
-/* =========================
-   WELCOME SCREEN
-========================= */
+
 
 .header {
     text-align: center;
@@ -83,9 +77,7 @@ body {
     outline: none;
 }
 
-/* =========================
-   BUTTON
-========================= */
+
 
 .btn {
     width: 100%;
@@ -111,9 +103,7 @@ body {
     font-size: 14px;
 }
 
-/* =========================
-   QUIZ SCREEN
-========================= */
+
 
 .top-bar {
     display: flex;
@@ -155,9 +145,6 @@ body {
     margin-top: 5px;
 }
 
-/* =========================
-   PROGRESS BAR
-========================= */
 
 .progress-section {
     margin-bottom: 25px;
@@ -184,9 +171,6 @@ body {
     transition: width 0.4s ease;
 }
 
-/* =========================
-   QUESTION CARD
-========================= */
 
 .question-card {
     margin-top: 20px;
@@ -231,9 +215,7 @@ body {
     color: #991b1b;
 }
 
-/* =========================
-   RESULT SCREEN
-========================= */
+
 
 .result-header {
     text-align: center;
@@ -274,9 +256,6 @@ body {
     margin-top: 25px;
 }
 
-/* =========================
-   ANIMATION
-========================= */
 
 @keyframes fadeIn {
     from {
@@ -290,9 +269,7 @@ body {
     }
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 768px) {
 
